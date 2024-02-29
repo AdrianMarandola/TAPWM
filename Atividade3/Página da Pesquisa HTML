@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploraWeb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ExploraWeb</h1>
+</header>
+
+<section>
+    <h2>Inteligência artificial</h2>
+    <p>A Inteligência artificial atua na reprodução de padrões de comportamento semelhantes ao humano por dispositivos e programas computacionais.</p>
+    <img src=https://s4.static.brasilescola.uol.com.br/be/2023/05/mao-humana-e-mao-robotica-tocando-um-grafico-digital-em-alusao-a-inteligencia-artificial.jpg>
+    <p>A inteligência artificial é um campo da ciência da computação que se dedica ao estudo e ao desenvolvimento de máquinas e programas computacionais capazes de reproduzir o comportamento humano na tomada de decisões e na realização de tarefas, desde as mais simples até as mais complexas. É comumente referida pela sigla IA ou AI (em inglês, artificial intelligence).</p>
+    <p>Com maior desenvolvimento a partir da década de 1950, a inteligência artificial já faz parte da vida cotidiana das pessoas por meio dos assistentes de voz, dos mecanismos de pesquisa, dos carros autônomos e das redes sociais. Apesar de trazerem inúmeros benefícios e avanços importantes em diversas áreas, muito se debate a respeito dos limites éticos da inteligência artificial e do papel que elas desempenham na nossa sociedade atual.</p>
+    <h2>Como funciona a inteligência artificial?</h2>
+    <p>O funcionamento da inteligência artificial, de maneira simplificada, acontece por meio da coleta e da combinação de um grande volume dados seguido da identificação de determinados padrões nesse conjunto de informações. Com esse processo, que geralmente se dá mediante a utilização de algoritmos pré-programados, o software consegue tomar decisões e realizar tarefas de maneira autônoma.</p>
+    <p>Existe uma série de diferentes métodos por meio dos quais uma IA pode reproduzir o comportamento humano. Os dois principais são:</p>
+    <p>Machine learning: chamado de aprendizado de máquina, é o processo que acontece de maneira automatizada. O reconhecimento e a reprodução de padrões são feitos pela IA com base na sua experiência prévia, adquirida pela utilização de algoritmos. Um dos principais exemplos são os mecanismos de pesquisa na internet.</p>
+    <p>Deep learning: subcampo do machine learning, utiliza-se de redes neurais (unidades conectadas em rede para a análise de bancos de dados e informações) para emular o cérebro humano.</p>
+    <h2>Exemplos de inteligência artificial no dia a dia</h2>
+    <p>A evolução tecnológica vivenciada pela humanidade nas últimas décadas proporcionou a incorporação cada vez maior da inteligência artificial na vida cotidiana. Veja, a seguir, alguns exemplos de como diferentes modelos de IA se fazem presentes.</p>
+    <p>Assistentes de voz: presentes em celulares e dispositivos como caixas de som inteligentes (smart speakers), os assistentes são um modelo de IA que reconhece e executa comandos feitos por meio da voz, como realizar ligações, programar alarmes, dar informações, tocar música e fazer pesquisas online. Os mais famosos assistentes de voz são o Google Assistente (integrado ao sistema Android); Siri, da Apple; e Alexa, da Amazon.</p>
+    <img src=https://s3.static.brasilescola.uol.com.br/be/2023/05/inteligencia-artificial-alexa.jpg>
+    <p>Reconhecimento facial: empregada na confirmação da identidade de uma pessoa ao acessar seus dispositivos pessoais, como smartphones, ou ainda em aplicativos financeiros, como os bancos virtuais. Mais recentemente, o reconhecimento facial tem sido aperfeiçoado para a sua adoção ampla em sistemas de segurança pública.</p>
+    <img src=https://s3.static.brasilescola.uol.com.br/be/2023/05/reconhecimento-facial-inteligencia-artificial.jpg>
+    <p>Redes sociais: os conteúdos das redes sociais que utilizamos todos os dias, como Instagram, Twitter e Facebook, não são apresentados da mesma maneira para todos os usuários. Isso porque existe um algoritmo que analisa os padrões da atividade dos indivíduos e personaliza qual tipo de postagem aparecerá para cada um, de acordo com os seus interesses.</p>
+    <h2>Tipos de inteligência artificial</h2>
+    <p>A inteligência artificial pode ser classificada de acordo com a sua capacidade de aprendizado e execução de tarefas e também de acordo com a sua funcionalidade.</p>
+    <h2>Segundo a capacidade</h2>
+    <p>Inteligência artificial limitada (ou estreita): Tem a capacidade de desempenhar determinada tarefa para a qual foi designada.</p>
+    <p>Inteligência artificial geral: Tem a capacidade de aprender e desempenhar qualquer tarefa que os seres humanos realizam.</p>
+    <p>Superinteligência artificial: Representa a simulação por completo das funcionalidades do cérebro humano, sendo o modelo mais avançado de IA.</p>
+    <h2>Segundo a funcionalidade</h2>
+    <p>Máquinas reativas: Funcionam com base em uma reação ao cenário dado, e não em tarefas pré-programadas ou pela memória. Forma mais antiga de IA, com alta limitação.</p>
+    <p>Memória limitada: Funciona pela análise de comportamentos anteriores que ficaram gravados na memória da IA. Com base nisso, consegue tomar decisões e realizar tarefas.</p>
+    <p>Teoria da mente: Em fase de desenvolvimento, tem como função identificar e compreender as diferentes emoções, os pensamentos e os sentimentos que ocorrem no cérebro humano, melhorando as interações estabelecidas pela IA.</p>
+    <p>Autoconsciente: Esse tipo de IA poderia desenvolver pensamentos e emoções próprias, sem o auxílio de comandos ou algum tipo de pré-programação. Ainda fica no campo da hipótese.</p>
+    <h2>Benefícios da inteligência artificial</h2>
+    <p>O aperfeiçoamento da inteligência artificial revolucionou o campo da informática e a maneira como nos relacionamos com a tecnologia. A IA trouxe uma série de benefícios para a sociedade e para os agentes econômicos, dentre os quais podemos destacar:</p>
+    <p>Maior eficácia na tomada de decisões e na execução de tarefas, com maior precisão e menor possibilidade da ocorrência de erros humanos.</p>
+    <p>Tem a capacidade de funcionar de maneira ininterrupta e realizar tarefas repetitivas.</p>
+    <p>Promove a automação de etapas do processo produtivo nas indústrias e fábricas, o que leva a um aumento da produtividade.</p>
+    <p>Resultou em melhorias no processo de compra e venda online, e facilitou o atendimento ao consumidor.</p>
+    <p>É responsável por avanços significativos na medicina, tendo introduzido processos inovadores que auxiliaram o trabalho dos médicos e enfermeiros e, além disso, beneficiaram pacientes de maneira direta.</p>
+    <p>É cada vez mais útil e presente, como vimos, auxiliando em etapas da nossa rotina, nas comunicações e na realização de tarefas.</p>
+    <h2>Desvantagens da inteligência artificial</h2>
+    <img src=https://s5.static.brasilescola.uol.com.br/be/2023/05/inteligencia-artificial-redes-sociais.jpg>
+    <p>Algumas das desvantagens da inteligência artificial caminham lado a lado com os aspectos benéficos dessa tecnologia, como é o caso da automação de tarefas. Veja, a seguir, quais são os principais pontos negativos das IA.</p>
+    <p>Apresentam elevado custo de desenvolvimento e implementação, sendo um recurso restrito.</p>
+    <p>A automação de tarefas e da tomada de decisões tendem a ocasionar desemprego estrutural.</p>
+    <p>Têm avanços limitados mesmo com maior acúmulo de experiência.</p>
+    <p>Possibilidade de treinar o algoritmo a repetir padrões e discursos danosos e antiéticos.</p>
+    <p>Podem apresentar falhas de controle que implicam risco àqueles que a controlam ou que fazem uso delas, como no caso dos carros autônomos.</p>
+    <p>Riscos de segurança com relação à coleta ao armazenamento de dados pessoais, o que suscita intensos debates na sociedade atual.</p>
+    <h2>Importância da inteligência artificial</h2>
+    <p>A inteligência artificial (IA) é uma ferramenta tecnológica importante porque trouxe avanços significativos para diferentes campos do conhecimento e da prática, como na informática, na medicina, na economia, nos transportes e na comunicação. A IA garantiu maior eficácia na organização produtiva e facilitou a realização automatizada de uma série de tarefas dentro das empresas.</p>
+    <p>No cotidiano, a IA surgiu como uma auxiliar na rotina de milhões de usuários, otimizando aspectos do cotidiano e sendo adotada de maneira quase integral por muitas pessoas por meio da utilização de dispositivos inteligentes em casa e no trabalho, da realização dos deslocamentos via carros autônomos e do uso incansável de redes sociais, sites de busca e de compras, entre outros modelos de IA que garantem maior praticidade no dia a dia.</p>
+    <h2>História da inteligência artificial</h2>
+    <p>A automatização de tarefas manuais e a replicação da consciência humana sempre foram temas presentes no debate científico, e que antecedem até mesmo a invenção dos computadores. Os estudos sobre redes neurais e os métodos pelos quais uma máquina consegue desenvolver tarefas como o cérebro humano ganharam força a partir do século XX, expandindo-se de maneira definitiva a partir da década de 1950.</p>
+    <p>Um dos principais nomes das ciências e considerado pai da computação, Alan Turing (1912-1954), escreveu um dos estudos mais completos do período sobre o tema. O artigo “Computadores e inteligência” foi publicado em 1950, e foi o primeiro a mencionar o termo “inteligência artificial”. Nele Turing propõe um teste para avaliar se as máquinas possuem a capacidade de emular o pensamento humano e de se fazerem passar por uma pessoa ao ponto de confundir quem as questiona, o que ficou conhecido como “jogo da imitação”.</p>
+    <p>No período subsequente, muitos estudos e pesquisas foram desenvolvidos a fim de testar a proposta de Turing, com destaque para o programa Eliza, criado pelo cientista computacional Joseph Weizenbaum (1923-2008), em 1966, e que obteve relativo sucesso mas foi também bastante criticado. Antes dele, pesquisadores da Universidade de Standford, na Califórnia (Estados Unidos), lançaram em 1965 aquele que é considerado o sistema pioneiro em inteligência artificial, chamado Dendral.</p>
+    <p>De lá para cá, mutos avanços foram feitos no campo da ciência da computação, da robótica e da inteligência artificial, de tal maneira que esses conceitos e elementos fazem parte do nosso cotidiano. No período mais recente, o surgimento de algoritmos capazes de interagir diretamente com os seres humanos pelo uso da linguagem e desenvolvimento de diálogos, como o Chat GPT, e outros capazes de produzir imagens por meio de poucos comandos, provoca um intenso debate na sociedade acerca do papel da inteligência artificial e dos limites dessas ferramentas.</p>
+    <h2>Resumo sobre inteligência artificial</h2>
+    <p>A inteligência artificial diz respeito aos dispositivos e softwares capazes de emular o comportamento e o pensamento humano na tomada de decisão e execução de tarefas.</p>
+    <p>Funcionam mediante análise de um grande volume de dados e identificação de padrões, o que é feito por meio de métodos diversos, como o machine learning e o deep learning.</p>
+    <p>São exemplos de IA no nosso dia a dia: assistentes de voz, reconhecimento facial, algoritmo de redes sociais.</p>
+    <p>Os diferentes modelos de inteligência artificial são classificados de acordo com a sua funcionalidade e a sua capacidade.</p>
+    <p>As IA e a automação tornam processos como a tomada de decisões e a produção muito mais rápidos e eficazes, sendo muito úteis na otimização de nossas rotinas diárias.</p>
+    <p>Entre seus pontos negativos, estão os elevados custos de produção e implementação e a possibilidade de ocasionarem o desemprego estrutural.</p>
+    <p>Os estudos sobre inteligência artificial ganharam força a partir da década de 1950, embora sempre tenham sido um tema muito debatido na ciência e pela sociedade.</p>
+</section>
+
+<section>
+    <h2>Bibliografia</h2>
+    <p><strong>Autora:</strong> Palomar Guitarrara</p>
+    <p><strong>Tema:</strong> Inteligência Artificial</p>
+    <p><strong>Site:</strong> UOL</p>
+    <p><strong>Data:</strong> 28/02/2024</p>
+    <p><strong>URL:</strong> <a href="url">https://brasilescola.uol.com.br/informatica/inteligencia-artificial.htm</a></p>
+</section>
+
+</body>
+</html>
