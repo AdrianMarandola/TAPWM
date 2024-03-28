@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operações</title>
+    <script>
+        function calcularOperacoes() {
+            var numero1 = parseFloat(prompt("Digite o primeiro número:"));
+            var numero2 = parseFloat(prompt("Digite o segundo número:"));
+
+            var soma = numero1 + numero2;
+            var subtracao = numero1 - numero2;
+            var produto = numero1 * numero2;
+            var divisao = numero1 / numero2;
+            var resto = numero1 % numero2;
+
+            alert("Soma: " + soma + "\n" +
+                  "Subtração: " + subtracao + "\n" +
+                  "Produto: " + produto + "\n" +
+                  "Divisão: " + divisao + "\n" +
+                  "Resto: " + resto);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="calcularOperacoes()">Clique aqui para fazer Operações</button>
+</body>
+</html>
