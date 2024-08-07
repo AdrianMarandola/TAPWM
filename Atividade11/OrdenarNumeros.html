@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar Números</title>
+</head>
+<body>
+    <script>
+        function ordenarNumeros(a, b, c) {
+            let numeros = [a, b, c];
+            numeros.sort((x, y) => x - y);
+            return numeros;
+        }
+        let num1 = parseFloat(prompt("Digite o primeiro número:"));
+        let num2 = parseFloat(prompt("Digite o segundo número:"));
+        let num3 = parseFloat(prompt("Digite o terceiro número:"));
+        let ordenados = ordenarNumeros(num1, num2, num3);
+        alert("Os números em ordem crescente são: " + ordenados.join(", "));
+    </script>
+</body>
+</html>

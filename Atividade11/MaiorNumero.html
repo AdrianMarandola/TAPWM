@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior Número</title>
+</head>
+<body>
+    <script>
+        function maiorNumero(a, b, c, d) {
+            let maior = a;
+            if (b > maior) {
+                maior = b;
+            }
+            if (c > maior) {
+                maior = c;
+            }
+            if (d > maior) {
+                maior = d;
+            }
+            return maior;
+        }
+        let num1 = parseFloat(prompt("Digite o primeiro número:"));
+        let num2 = parseFloat(prompt("Digite o segundo número:"));
+        let num3 = parseFloat(prompt("Digite o terceiro número:"));
+        let num4 = parseFloat(prompt("Digite o quarto número:"));
+        alert("O maior número é: " + maiorNumero(num1, num2, num3, num4));
+    </script>
+</body>
+</html>
