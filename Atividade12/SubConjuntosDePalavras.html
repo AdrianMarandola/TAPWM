@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubConjuntos de Palavras</title>
+</head>
+<body>
+    <h1>SubConjuntos de Palavras</h1>
+    <form id="wordForm">
+        <label for="palavra1">Palavra 1:</label>
+        <input type="text" id="palavra1" required><br><br>
+
+        <label for="palavra2">Palavra 2:</label>
+        <input type="text" id="palavra2" required><br><br>
+
+        <button type="button" onclick="verificar()">Verificar</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        function verificar() {
+            const palavra1 = document.getElementById('palavra1').value;
+            const palavra2 = document.getElementById('palavra2').value;
+
+            function verificarSubconjunto(palavra1, palavra2) {
+                if (!palavra1 || !palavra2) {
+                    return "erro";
+                }
+                if (palavra1.includes(palavra2)) {
+                    return "é um subconjunto";
+                } else {
+                    return "não é um subconjunto";
+                }
+            }
+
+            const resultado = verificarSubconjunto(palavra1, palavra2);
+            document.getElementById('resultado').innerText = resultado;
+        }
+    </script>
+</body>
+</html>
