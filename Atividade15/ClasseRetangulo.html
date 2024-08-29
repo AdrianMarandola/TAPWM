@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe Retângulo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        input {
+            margin: 10px;
+            padding: 8px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando a Área do Retângulo</h1>
+    <form id="formulario">
+        <label for="base">Base:</label>
+        <input type="number" id="base" required>
+        <br>
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura" required>
+        <br>
+        <button type="button" onclick="calcularArea()">Calcular Área</button>
+    </form>
+    <p id="resultado"></p>
+
+    <script>
+        class Retangulo {
+            constructor(base, altura) {
+                this.base = base;
+                this.altura = altura;
+            }
+
+            calcularArea() {
+                return this.base * this.altura;
+            }
+        }
+
+        function calcularArea() {
+            const base = parseFloat(document.getElementById('base').value);
+            const altura = parseFloat(document.getElementById('altura').value);
+
+            if (isNaN(base) || isNaN(altura) || base <= 0 || altura <= 0) {
+                document.getElementById('resultado').innerText = 'Por favor, insira valores válidos para base e altura.';
+                return;
+            }
+
+            const retangulo = new Retangulo(base, altura);
+
+            const resultado = retangulo.calcularArea();
+            document.getElementById('resultado').innerText = `A área do retângulo é: ${resultado} unidades quadradas.`;
+        }
+    </script>
+</body>
+</html>
