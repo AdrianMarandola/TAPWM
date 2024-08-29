@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janela Interativa</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #janela {
+            width: 250px;
+            height: auto;
+        }
+        h1 {
+            font-size: 32px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="estado">Feche a Janela (Janela Aberta)</h1>
+    <img id="janela" src="view-5914192_1280.jpg" alt="Janela Aberta">
+
+    <script>
+        const imagemJanela = document.getElementById('janela');
+        const estadoTexto = document.getElementById('estado');
+
+        imagemJanela.addEventListener('mouseover', function() {
+            imagemJanela.src = 'Capturar.PNG';
+            estadoTexto.innerText = 'Abra a Janela (Janela Fechada)';
+        });
+        
+        imagemJanela.addEventListener('mouseout', function() {
+            imagemJanela.src = 'view-5914192_1280.jpg';
+            estadoTexto.innerText = 'Feche a Janela (Janela Aberta)';
+        });
+
+        imagemJanela.addEventListener('click', function() {
+            imagemJanela.src = '860.jpeg';
+            estadoTexto.innerText = 'Conserte a Janela (Janela Quebrada)';
+        });
+    </script>
+</body>
+</html>
