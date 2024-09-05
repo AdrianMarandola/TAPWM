@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformador de Texto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Transformador de Texto</h1>
+        <label for="textInput">Digite o seu Texto aqui:</label>
+        <input type="text" id="textInput">
+    </div>
+    
+    <div class="container">
+        <input type="checkbox" id="uppercaseCheckbox">
+        <label for="uppercaseCheckbox">Clique aqui para Transformar seu Texto em Maiúsculo(a)</label>
+    </div>
+
+    <div class="container">
+        <input type="checkbox" id="lowercaseCheckbox">
+        <label for="lowercaseCheckbox">Clique aqui para Transformar seu Texto em minúsculo(a)</label>
+    </div>
+
+    <script>
+        const textInput = document.getElementById('textInput');
+        const uppercaseCheckbox = document.getElementById('uppercaseCheckbox');
+        const lowercaseCheckbox = document.getElementById('lowercaseCheckbox');
+
+        function updateText() {
+            let text = textInput.value;
+
+            if (uppercaseCheckbox.checked) {
+                text = text.toUpperCase();
+            } else if (lowercaseCheckbox.checked) {
+                text = text.toLowerCase();
+            }
+
+            textInput.value = text;
+        }
+
+        function handleCheckboxChange(event) {
+            if (event.target === uppercaseCheckbox && lowercaseCheckbox.checked) {
+                lowercaseCheckbox.checked = false;
+            } else if (event.target === lowercaseCheckbox && uppercaseCheckbox.checked) {
+                uppercaseCheckbox.checked = false;
+            }
+            updateText();
+        }
+
+        uppercaseCheckbox.addEventListener('change', handleCheckboxChange);
+        lowercaseCheckbox.addEventListener('change', handleCheckboxChange);
+
+        textInput.addEventListener('input', updateText);
+    </script>
+</body>
+</html>
