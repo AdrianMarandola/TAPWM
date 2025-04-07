@@ -1,0 +1,910 @@
+<!DOCTYPE html><html><head>
+<style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 1rem;
+      }
+      ol,
+      ul {
+        margin-bottom: 0in;
+      }
+      table {
+        margin-top: 1rem;
+        border: 1px solid gray;
+        width: 7in;
+        border-collapse: collapse;
+      }
+
+      table > thead > tr > .openTableTextBox__table-header-data {
+        text-align: center;
+        margin-top: 6pt;
+        margin-right: 0in;
+        margin-bottom: 6pt;
+        margin-left: 0in;
+        text-align: center;
+        line-height: 115%;
+        page-break-after: avoid;
+        font-size: 10pt;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        background: #dbe5f1;
+        padding: 0.5rem;
+      }
+      .openTableTextBox__answerText
+        table
+        > thead
+        > tr
+        > .openTableTextBox__table-header-data {
+        background: #f2dbdb !important;
+      }
+      .openTextBox__textArea-container {
+        margin-top: 6pt;
+        margin-right: 0in;
+        margin-bottom: 6pt;
+        font-size: 10pt;
+        font-family: "Arial", sans-serif;
+        width: 50%;
+      }
+      .openTableTextBox__fieldset {
+        padding: 5px;
+      }
+      td {
+        margin-top: 3pt;
+        margin-right: 0in;
+        margin-bottom: 3pt;
+        margin-left: 0in;
+        font-size: 10pt;
+        font-family: "Arial", sans-serif;
+        width: 98.85pt;
+        border: solid windowtext 1pt;
+        border-top: none;
+        padding: 0.7pt 5.75pt 0.7pt 5.75pt;
+      }
+      textarea {
+        width: 100%;
+      }
+      .answergray {
+        padding: 0.2rem;
+      }
+
+      .openTableTextBox__widget {
+        margin-top: 6pt;
+        margin-right: 0in;
+        margin-bottom: 6pt;
+        margin-left: 0.25in;
+      }
+
+      .show-answer,
+      .hide-answer {
+        padding: 0.5rem 1rem;
+        background-color: #3d692b;
+        color: #fff;
+        border: 0px;
+        cursor: pointer;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+
+      .openTextBoxController__button-container {
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .openTextBoxController__button-container .btn-text {
+        margin: 10px;
+      }
+
+      .btn-text {
+        border: 0px;
+        padding: 0.5rem 1rem;
+        background-color: #3d692b;
+        color: #fff;
+        border-radius: 0;
+        cursor: pointer;
+      }
+
+      .u-display-none {
+        display: none;
+      }
+      .openTextBox__postText, openTableTextBox__postText {
+        margin-top: 0.5rem;
+      }
+      .edit-comment {
+        display: none;
+      }
+      .js-heading-inner {
+        display: none;
+      }
+      .block__title-inner,
+      .article__title-inner {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+      h2{
+        font-size: 1.25em;
+      }
+      h3{
+        font-size: 1.125em;
+      }
+      .table
+        > .table-inner
+        > .table-wrapper
+        > .table-widget
+        > table
+        > tbody
+        > tr
+        > th {
+        border: solid windowtext 1pt;
+      }
+      .openTableTextBox__answerText
+        table
+        > thead
+        > tr
+        > .openTableTextBox__table-header-data {
+        background: #f2dbdb !important;
+      }
+      .command-output > .table-inner > .table-wrapper > .table-widget > table,
+      .command-output
+        > .table-inner
+        > .table-wrapper
+        > .table-widget
+        > table
+        > tbody
+        > tr
+        > td,
+      .command-output
+        > .table-inner
+        > .table-wrapper
+        > .table-widget
+        > table
+        > tbody
+        > tr
+        > th {
+        border: none !important;
+        text-align: right !important;
+      }
+      .simple-table > .table-inner > .table-wrapper{
+        margin-left: 1.5rem;
+      }
+      .openTextBox__widget {
+        margin-left: 1.5rem;
+      }
+      img {
+        width: 30%;
+        height: auto;
+        margin-top: 1rem;
+        margin-left: 3rem;
+      }
+      .answergray {
+        background-color: #ccc;
+      }
+      .openTableTextBox__widget > .answergray {
+        background-color: #fff !important;
+      }
+      li > ul,ol > li{
+        margin-left: 0px !important;
+      }
+      img {
+        width: 30%;
+        height: auto;
+        margin-top: 1rem;
+        margin-left: 3rem;
+      }
+    </style>
+
+</head><body><!---->
+            <div class="article 62c749ed99b89900e9aa123 background-color-white remove-padding-top ">
+                <div class="article__inner">
+                <div class=" no-adaptive-scroll">
+                    <!--?lit$002769863$-->
+                        <div class=""> 
+                            <base-view type="article" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="article__header-wrapper background-color-white remove-padding-top ">
+        <div class="article__header ">
+              <div class="article__header-inner ">
+                  <!--?lit$002769863$--><heading-view headingtitle="1.8.1 Laboratório - Manual de Montagem de PC" modelid="62c749ed99b89900e9aa123" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="article-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->1.8.1 Laboratório - Manual de Montagem de PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                            <div class="block__container " style="">
+                                <!--?lit$002769863$--><!---->
+                                    <block-view modelid="62cc32cc99b89900e9ab100" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="block" style="width: 11.1111%;"><!---->
+                
+                <div data-socialgoodpulse-id="62cc32cc99b89900e9ab100" class="62cc32cc99b89900e9ab100 block background-color-white  remove-padding-bottom  ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="62cc32cc99b89900e9ab100" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper background-color-white  remove-padding-bottom  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  <!--?lit$002769863$--><heading-view headingtitle="Laboratório - Manual de Montagem do PC" modelid="62cc32cc99b89900e9ab100" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="block-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->Laboratório - Manual de Montagem do PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                    <div class=" block__title ">
+                      <!--?lit$002769863$-->
+                        <div aria-hidden="true" class="block__title-inner ">
+                        <!--?lit$002769863$-->Laboratório - Manual de Montagem do PC</div>
+                      
+                    </div>
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$002769863$--><!----><text-view modelid="62bdd2967577ae00e364c100" class="is-full" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="62bdd2967577ae00e364c100" class="component text 62bdd2967577ae00e364c100  is-full   ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  <!--?lit$002769863$--><heading-view headingtitle="1.8.1 Laboratório - Manual de Montagem de PC" modelid="62bdd2967577ae00e364c100" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="component-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->1.8.1 Laboratório - Manual de Montagem de PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$--> <div class="component__content">
+                      <div class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$002769863$--><h3>Introdução</h3><p>Neste laboratório, você monta um PC. As instruções fornecidas são apenas para referência.</p><p><strong>Parte 1: Instalação da Fonte de Alimentação</strong></p><p><strong>Parte 2: Instalação da Placa-Mãe em um Computador</strong></p><p><strong>Parte 3: Instalação das Unidades</strong></p><p><strong>Parte 4: Instalação de Placas Adaptadoras</strong></p><p><strong>Parte 5: Instalação de Cabos Internos</strong></p><p><strong>Parte 6: Instalação dos Cabos do Painel Frontal</strong></p><p><strong>Parte 7: Complete a Montagem do Computador</strong></p><h3>Equipamentos recomendados</h3><ul><li>Fonte de alimentação de tamanho compatível com o gabinete do computador</li><li>Gabinete de computador</li><li>Kit de ferramentas, pulseira antiestática e tapete antiestático</li><li>Placa-mãe, espaçadores e parafusos da placa-mãe e manual da placa-mãe</li><li>CPU, conjunto dissipador de calor/ventilador e pasta térmica</li><li>Módulos de RAM</li><li>Unidade de disco rígido, parafusos da unidade de disco rígido e cabo de dados da unidade de disco rígido</li><li>Unidade óptica, parafusos da unidade óptica e cabo de dados da unidade óptica</li><li>NIC e NIC sem fio</li><li>Adaptador de vídeo</li><li>Parafusos das placas</li><li>Cabo do monitor (HDMI, DVI ou VGA)</li><li>Teclado e mouse</li><li>Cabo de rede</li><li>Antena sem fio</li></ul></div>
+                      </div>
+                    </div>
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="62cc32cc99b89900e9ab101" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="block" style="width: 11.1111%;"><!---->
+                
+                <div data-socialgoodpulse-id="62cc32cc99b89900e9ab101" class="62cc32cc99b89900e9ab101 block background-color-white  remove-padding-bottom remove-padding-top  ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="62cc32cc99b89900e9ab101" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper background-color-white  remove-padding-bottom remove-padding-top  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  <!--?lit$002769863$--><heading-view headingtitle="Laboratório - Manual de Montagem do PC" modelid="62cc32cc99b89900e9ab101" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="block-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->Laboratório - Manual de Montagem do PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$002769863$--><!----><text-view modelid="62bdd2967577ae00e364c101" class="is-full" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="62bdd2967577ae00e364c101" class="component text 62bdd2967577ae00e364c101  is-full   ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  <!--?lit$002769863$--><heading-view headingtitle="1.8.1 Laboratório - Manual de Montagem de PC" modelid="62bdd2967577ae00e364c101" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="component-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->1.8.1 Laboratório - Manual de Montagem de PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$--> <div class="component__content">
+                      <div class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$002769863$--><h3>Instruções</h3><h3> Parte 1: Instalação da Fonte de Alimentação</h3><p><strong>Etapa 1: Abra o gabinete do computador.</strong></p><ol type="a"><li><p>Remova os parafusos dos painéis laterais.</p></li><li><p>Remova os painéis laterais do gabinete do computador.</p></li></ol><p><strong>Etapa 2: Instalação da Fonte de Alimentação.</strong></p><ol type="a"><li><p>Alinhe os furos para parafusos na fonte de alimentação com os do gabinete.</p></li><li><p>Fixe a fonte de alimentação ao gabinete com os parafusos da fonte de alimentação.</p></li><li><p>Se a fonte de alimentação tiver uma chave de seleção de tensão, ajuste-a para corresponder à tensão na sua área.</p></li></ol></div>
+                      </div>
+                    </div>
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="62cc32cc99b89900e9ab102" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="block" style="width: 11.1111%;"><!---->
+                
+                <div data-socialgoodpulse-id="62cc32cc99b89900e9ab102" class="62cc32cc99b89900e9ab102 block background-color-white  remove-padding-bottom remove-padding-top  ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="62cc32cc99b89900e9ab102" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper background-color-white  remove-padding-bottom remove-padding-top  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  <!--?lit$002769863$--><heading-view headingtitle="Laboratório - Manual de Montagem do PC" modelid="62cc32cc99b89900e9ab102" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="block-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->Laboratório - Manual de Montagem do PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$002769863$--><!----><text-view modelid="62bdd2967577ae00e364c102" class="is-full" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="62bdd2967577ae00e364c102" class="component text 62bdd2967577ae00e364c102  is-full   ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  <!--?lit$002769863$--><heading-view headingtitle="1.8.1 Laboratório - Manual de Montagem de PC" modelid="62bdd2967577ae00e364c102" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="component-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->1.8.1 Laboratório - Manual de Montagem de PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$--> <div class="component__content">
+                      <div class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$002769863$--><h3>Parte 2: Instalação da Placa-Mãe em um Computador</h3><p><strong>Etapa 1: Instale a CPU.</strong></p><ol type="a"><li><p>Coloque a placa-mãe, a CPU, o dissipador de calor com ventoinha e o módulo de RAM na superfície antiestática.<br></p></li></ol><p><strong>Observação</strong>: Estas são instruções gerais para um soquete LGA1155. Sua placa-mãe pode ser diferente. Siga todas as instruções fornecidas pelos fabricantes da CPU e da placa-mãe.</p><ol type="a" start="2"><li><p>Coloque a pulseira antiestática e conecte o cabo de aterramento à superfície antiestática.</p></li><li><p>Localize o Pino 1 na CPU. Localize o Pino 1 no soquete.<br></p></li></ol><p><strong>Observação</strong>: a CPU pode ser danificada se for instalada incorretamente.</p><ol type="a" start="4"><li><p>Alinhe o Pino 1 na CPU com o Pino 1 no soquete.</p></li><li><p>Coloque a CPU no soquete da CPU.</p></li><li><p>Feche a trava da CPU e fixe-a no lugar ao fechar a alavanca e movê-la para baixo da guia de retenção.</p></li><li><p>Aplique uma pequena quantidade de pasta térmica à CPU.<br></p></li></ol><p><strong>Observação</strong>: a pasta térmica será necessária somente quando não estiver presente no dissipador de calor. Siga todas as instruções fornecidas pelo fabricante para obter detalhes específicos sobre a aplicação da pasta.</p><ol type="a" start="8"><li><p>Alinhe o dissipador de calor com ventoinha aos furos na placa-mãe ao redor do soquete da CPU.</p></li><li><p>Coloque dissipador de calor com ventoinha sobre a CPU e os retentores através dos furos na placa-mãe.</p></li><li><p>Aperte o dissipador de calor com ventoinha para fixá-lo.</p></li><li><p>Plugue o conector da ventoinha na placa-mãe. Consulte o manual da placa-mãe para determinar qual conjunto de pinos das tomadas das ventoinhas deve ser usado.</p></li></ol><p><strong>Etapa 2: Instale a RAM.</strong></p><ol type="a"><li><p>Localize os slots da RAM na placa-mãe.</p></li><li><p>Alinhe os sulcos na borda inferior do módulo da RAM com os sulcos no slot.</p></li><li><p>Pressione até as travas laterais prenderem o módulo da RAM.</p></li><li><p>Nenhum dos contatos do módulo da RAM deve estar visível. Reassente o módulo da RAM, se necessário.</p></li><li><p>Verifique as travas para confirmar se o módulo da RAM está seguro.</p></li><li><p>Instale quaisquer os módulos adicionais de RAM usando o mesmo procedimento.</p></li></ol><p><strong>Etapa 3: Instale a Placa-Mãe.</strong></p><ol type="a"><li><p>Instale os espaçadores da placa-mãe.</p></li><li><p>Instale a placa do conector I/O na parte posterior do gabinete do computador.</p></li><li><p>Alinhe os conectores na parte de trás da placa-mãe com as aberturas na parte de trás do gabinete do computador.</p></li><li><p>Coloque a placa-mãe dentro do gabinete e alinhe os furos para parafusos com os espaçadores. Talvez seja necessário ajustar a placa-mãe para alinhar os furos para parafusos.</p></li><li><p>Prenda a placa-mãe&nbsp; ao gabinete usando os parafusos corretos.</p></li></ol></div>
+                      </div>
+                    </div>
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="62cc32cc99b89900e9ab103" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="block" style="width: 11.1111%;"><!---->
+                
+                <div data-socialgoodpulse-id="62cc32cc99b89900e9ab103" class="62cc32cc99b89900e9ab103 block background-color-white  remove-padding-bottom remove-padding-top  ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="62cc32cc99b89900e9ab103" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper background-color-white  remove-padding-bottom remove-padding-top  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  <!--?lit$002769863$--><heading-view headingtitle="Laboratório - Manual de Montagem do PC" modelid="62cc32cc99b89900e9ab103" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="block-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->Laboratório - Manual de Montagem do PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$002769863$--><!----><text-view modelid="62bdd2967577ae00e364c103" class="is-full" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="62bdd2967577ae00e364c103" class="component text 62bdd2967577ae00e364c103  is-full   ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  <!--?lit$002769863$--><heading-view headingtitle="1.8.1 Laboratório - Manual de Montagem de PC" modelid="62bdd2967577ae00e364c103" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="component-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->1.8.1 Laboratório - Manual de Montagem de PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$--> <div class="component__content">
+                      <div class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$002769863$--><h3>Parte 3: Instale as Unidades</h3><p><strong>Etapa 1: Instale a Unidade de Disco Rígido.</strong></p><ol type="a"><li><p>Alinhe a unidade de disco rígido com uma baia de 3,5 polegadas.</p></li><li><p>Deslize a unidade de disco rígido para dentro da baia pela parte interna do gabinete, até que os furos para os parafusos se alinhem aos furos na baia de 3,5 polegadas.</p></li><li><p>Fixe a unidade de disco rígido ao gabinete utilizando os parafusos adequados.</p></li></ol><p><strong>Etapa 2: Instale a Unidade Óptica.</strong></p><p><strong>Observação</strong>: remova a tampa de 5,25 polegadas de uma das baias externas de 5,25 polegadas, se necessário.</p><ol type="a"><li><p>Alinhe a unidade óptica com uma baia de 5,25 polegadas.</p></li><li><p>Insira a unidade óptica na baia pela parte frontal do gabinete, até que os furos para os parafusos se alinhem aos furos da baia de 5,25 polegadas e a parte frontal da unidade óptica esteja nivelada com a parte frontal do gabinete.</p></li><li><p>Fixe a unidade óptica ao gabinete utilizando os parafusos adequados.</p></li></ol></div>
+                      </div>
+                    </div>
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="62cc32cc99b89900e9ab104" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="block" style="width: 11.1111%;"><!---->
+                
+                <div data-socialgoodpulse-id="62cc32cc99b89900e9ab104" class="62cc32cc99b89900e9ab104 block background-color-white  remove-padding-bottom remove-padding-top  ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="62cc32cc99b89900e9ab104" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper background-color-white  remove-padding-bottom remove-padding-top  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  <!--?lit$002769863$--><heading-view headingtitle="Laboratório - Manual de Montagem do PC" modelid="62cc32cc99b89900e9ab104" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="block-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->Laboratório - Manual de Montagem do PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$002769863$--><!----><text-view modelid="62bdd2967577ae00e364c104" class="is-full" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="62bdd2967577ae00e364c104" class="component text 62bdd2967577ae00e364c104  is-full   ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  <!--?lit$002769863$--><heading-view headingtitle="1.8.1 Laboratório - Manual de Montagem de PC" modelid="62bdd2967577ae00e364c104" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="component-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->1.8.1 Laboratório - Manual de Montagem de PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$--> <div class="component__content">
+                      <div class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$002769863$--><h3>Parte 4: Instalação de Placas Adaptadoras</h3><p><strong>Etapa 1: Instale a Placa de Rede Com Fio.</strong></p><ol type="a"><li><p>Localize um slot de expansão compatível para a placa de rede na placa-mãe.</p></li><li><p>Remova a tampa do slot na parte traseira do gabinete, se necessário.</p></li><li><p>Alinhe a placa de rede com o slot de expansão.</p></li><li><p>Pressione levemente a placa de rede até que ela esteja totalmente encaixada.</p></li><li><p>Fixe a placa de rede prendendo com um parafuso o suporte de montagem ao gabinete.</p></li></ol><p><strong>Etapa 2: Instale a Placa de Rede Sem Fio.</strong></p><ol type="a"><li><p>Localize um slot de expansão compatível para a placa de rede sem fio na placa-mãe.</p></li><li><p>Remova a tampa do slot na parte traseira do gabinete, se necessário.</p></li><li><p>Alinhe a placa de rede sem fio com o slot de expansão.</p></li><li><p>Pressione levemente a placa de rede sem fio até que ela esteja totalmente encaixada.</p></li><li><p>Fixe a placa de rede sem fio prendendo com um parafuso o suporte de montagem ao gabinete.</p></li></ol><p><strong>Etapa 3: Instale o Adaptador de Vídeo.</strong></p><ol type="a"><li><p>Localize um slot de expansão compatível com o adaptador de vídeo na placa-mãe.</p></li><li><p>Remova as tampas do slot na parte traseira do gabinete, se necessário.</p></li><li><p>Alinhe o adaptador de vídeo com o slot de expansão.</p></li><li><p>Pressione levemente o adaptador de vídeo até que ele esteja totalmente encaixado.</p></li><li><p>Fixe o adaptador de vídeo prendendo com um parafuso o suporte de montagem ao gabinete.</p></li></ol></div>
+                      </div>
+                    </div>
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="62cc32cc99b89900e9ab105" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="block" style="width: 11.1111%;"><!---->
+                
+                <div data-socialgoodpulse-id="62cc32cc99b89900e9ab105" class="62cc32cc99b89900e9ab105 block background-color-white  remove-padding-bottom remove-padding-top  ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="62cc32cc99b89900e9ab105" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper background-color-white  remove-padding-bottom remove-padding-top  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  <!--?lit$002769863$--><heading-view headingtitle="Laboratório - Manual de Montagem do PC" modelid="62cc32cc99b89900e9ab105" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="block-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->Laboratório - Manual de Montagem do PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$002769863$--><!----><text-view modelid="62bdd2967577ae00e364c105" class="is-full" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="62bdd2967577ae00e364c105" class="component text 62bdd2967577ae00e364c105  is-full   ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  <!--?lit$002769863$--><heading-view headingtitle="1.8.1 Laboratório - Manual de Montagem de PC" modelid="62bdd2967577ae00e364c105" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="component-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->1.8.1 Laboratório - Manual de Montagem de PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$--> <div class="component__content">
+                      <div class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$002769863$--><h3>Parte 5: Instalação de Cabos Internos</h3><p><strong>Etapa 1: Conecte o conector da fonte de alimentação à placa-mãe.</strong></p><ol type="a"><li><p>Alinhe o conector da fonte de alimentação da placa-mãe com o soquete na placa-mãe.</p></li><li><p>Pressione levemente o conector até que o clipe faça um clique ao encaixar.</p></li></ol><p><strong>Etapa 2: Conecte o conextor auxiliar de energia.</strong></p><ol type="a"><li><p>Alinhe o conector auxiliar de energia com a tomada de energia auxiliar na placa-mãe.</p></li><li><p>Pressione levemente o conector até que o clipe faça um clique ao encaixar.</p></li></ol><p><strong>Observação</strong>: Este passo é necessário somente se o seu computador tiver um conector auxiliar de energia.</p><p><strong>Etapa 3: Conecte os conectores de alimentação das unidades de disco internas.</strong></p><p>Conecte um conector de alimentação à unidade de disco rígido e à unidade óptica</p><strong>Etapa 4: Conecte o cabo de alimentação do adaptador de vídeo.</strong><p>Conecte o conector de energia PCIe ao adaptador de vídeo.</p><p><strong>Observação:</strong> Este passo é necessário somente se seu adaptador de vídeo tem um conector de energia PCIe.</p><p><strong>Etapa 5: Conecte o conector de energia da ventoinha.</strong></p><p>Conecte o conector de energia da ventoinha à tomada de ventoinha apropriada da placa-mãe.</p><p><strong>Observação</strong>: Este passo é necessário somente se o seu computador tiver um conector de energia da ventoinha.</p><p><strong>Etapa 6: Conecte o cabo de dados do disco rígido.</strong></p><ol type="a"><li><p>Alinhe e conecte o cabo de dados da unidade de disco rígido ao conector da placa-mãe.</p></li><li><p>Alinhe e conecte a outra extremidade do cabo de dados da unidade de disco rígido ao conector da unidade de disco rígido.</p></li></ol><p><strong>Observação</strong>: os cabos SATA são chanfrados para garantir a orientação correta do conector.</p><p><strong>Etapa 7: Conecte o cabo de dados da unidade óptica.</strong></p><ol type="a"><li><p>Alinhe e conecte o cabo de dados da unidade óptica ao conector da placa-mãe.</p></li><li><p>Alinhe e conecte a outra extremidade do cabo de dados da unidade óptica ao conector da unidade óptica.</p></li></ol><p><strong>Etapa 8: Verifique as conexões.</strong></p></div>
+                      </div>
+                    </div>
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="62cc32cc99b89900e9ab106" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="block" style="width: 11.1111%;"><!---->
+                
+                <div data-socialgoodpulse-id="62cc32cc99b89900e9ab106" class="62cc32cc99b89900e9ab106 block background-color-white  remove-padding-bottom remove-padding-top  ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="62cc32cc99b89900e9ab106" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper background-color-white  remove-padding-bottom remove-padding-top  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  <!--?lit$002769863$--><heading-view headingtitle="Laboratório - Manual de Montagem do PC" modelid="62cc32cc99b89900e9ab106" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="block-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->Laboratório - Manual de Montagem do PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$002769863$--><!----><text-view modelid="62bdd2967577ae00e364c106" class="is-full" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="62bdd2967577ae00e364c106" class="component text 62bdd2967577ae00e364c106  is-full   ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  <!--?lit$002769863$--><heading-view headingtitle="1.8.1 Laboratório - Manual de Montagem de PC" modelid="62bdd2967577ae00e364c106" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="component-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->1.8.1 Laboratório - Manual de Montagem de PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$--> <div class="component__content">
+                      <div class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$002769863$--><h3>Parte 6: Instalação dos Cabos do Painel Frontal</h3><p><strong>Etapa 1: Conecte o conector do botão de reset.</strong></p><p>Pressione cuidadosamente o conector do botão de reset até que os pinos estejam totalmente inseridos.</p><p><strong>Etapa 2: Conecte o conector do botão de energia.</strong></p><p>Pressione cuidadosamente o conector do botão de energia até que os pinos estejam totalmente inseridos.</p><p><strong>Etapa 3: Conecte o conector do LED de energia.</strong></p><p>Pressione cuidadosamente o conector do LED de energia até que os pinos estejam totalmente inseridos.</p><p><strong>Etapa 4: Conecte o conector do LED das unidades de disco.</strong></p><p>Pressione cuidadosamente o conector do LED das unidades de disco até que os pinos estejam totalmente inseridos.</p><p><strong>Etapa 5: Conecte o conector do alto falante.</strong></p><p>Pressione cuidadosamente o conector do alto-falante até que os pinos estejam totalmente inseridos.</p><p><strong>Etapa 6: Conecte os conectores USB e de áudio frontais.</strong></p><p>Se o seu gabinete também tiver USB frontal e conectores de áudio frontais, pressione suavemente o conector até que o clipe se encaixe no lugar ou os pinos estejam totalmente inseridos.</p><p><strong>Etapa 7: Verifique as conexões.</strong></p><p></p><p><strong>Observação</strong>: se algum LED ou botão não funcionar quando o computador for iniciado pela primeira vez, remova o conector deste item, gire-o e reconecte-o.</p></div>
+                      </div>
+                    </div>
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="62cc32cc99b89900e9ab107" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="block" style="width: 11.1111%;"><!---->
+                
+                <div data-socialgoodpulse-id="62cc32cc99b89900e9ab107" class="62cc32cc99b89900e9ab107 block background-color-white  remove-padding-bottom remove-padding-top  ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="62cc32cc99b89900e9ab107" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper background-color-white  remove-padding-bottom remove-padding-top  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  <!--?lit$002769863$--><heading-view headingtitle="Laboratório - Manual de Montagem do PC" modelid="62cc32cc99b89900e9ab107" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="block-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->Laboratório - Manual de Montagem do PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$002769863$--><!----><text-view modelid="62bdd2967577ae00e364c107" class="is-full" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="62bdd2967577ae00e364c107" class="component text 62bdd2967577ae00e364c107  is-full   ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  <!--?lit$002769863$--><heading-view headingtitle="1.8.1 Laboratório - Manual de Montagem de PC" modelid="62bdd2967577ae00e364c107" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="component-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->1.8.1 Laboratório - Manual de Montagem de PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$--> <div class="component__content">
+                      <div class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$002769863$--><h3>Parte 7: Complete a Montagem do Computador</h3><p><strong>Etapa 1: Conecte os painéis laterais.</strong></p><ol type="a"><li><p>Conecte os painéis laterais ao gabinete do computador.</p></li><li><p>Fixe os painéis ao computador usando os parafusos do painel.</p></li></ol><p><strong>Etapa 2: Conecte o cabo do monitor.</strong></p><ol type="a"><li><p>Conecte o cabo do monitor à porta de vídeo.</p></li><li><p>Fixe o cabo, apertando os parafusos do conector.</p></li></ol><p><strong>Etapa 3: Conecte o cabo do teclado.</strong></p><p>Conecte o cabo do teclado na porta USB ou na porta de teclado PS/2.</p><p><strong>Etapa 4: Conecte o cabo do mouse.</strong></p><p>Conecte o cabo do mouse na porta USB ou na porta de mouse PS/2.</p><p><strong>Etapa 5: Conecte o cabo de Ethernet.</strong></p><p>Ligue o cabo Ethernet à porta Ethernet.</p><p><strong>Etapa 6: Conecte a antena sem fio.</strong></p><p>Conecte a antena sem fio ao conector da antena.</p><p><strong>Etapa 7: Conecte o cabo de alimentação.</strong></p><p>Conecte o cabo de alimentação no soquete de alimentação da fonte de alimentação.</p><p><strong>Etapa 8: Verifique as conexões.</strong></p><p>Este laboratório chegou ao fim. Solicite ao instrutor que verifique o trabalho realizado.</p></div>
+                      </div>
+                    </div>
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="62cc32cc99b89900e9ab108" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="block" style="width: 11.1111%;"><!---->
+                
+                <div data-socialgoodpulse-id="62cc32cc99b89900e9ab108" class="62cc32cc99b89900e9ab108 block background-color-white  remove-padding-bottom remove-padding-top  ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="62cc32cc99b89900e9ab108" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper background-color-white  remove-padding-bottom remove-padding-top  ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  <!--?lit$002769863$--><heading-view headingtitle="Laboratório - Manual de Montagem do PC" modelid="62cc32cc99b89900e9ab108" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="block-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->Laboratório - Manual de Montagem do PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$002769863$--><!----><text-view modelid="62bdd2967577ae00e364c108" class="is-full" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="component__header-container">
+            <div data-socialgoodpulse-id="62bdd2967577ae00e364c108" class="component text 62bdd2967577ae00e364c108  is-full   ">
+                <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  <!--?lit$002769863$--><heading-view headingtitle="1.8.1 Laboratório - Manual de Montagem de PC" modelid="62bdd2967577ae00e364c108" is-touch="false" fullscreen="true" device="small" browser="Chrome" os="linux" dir="ltr" location="page" theme="light" orientation="portrait" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="component-heading" aria-level="1">
+        <span class="aria-label"> <!--?lit$002769863$-->Incompleta &nbsp;<!--?lit$002769863$-->1.8.1 Laboratório - Manual de Montagem de PC</span>
+        </div>
+      </div>
+    </heading-view>
+                  <!--?lit$002769863$-->
+                  
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$--> <div class="component__content">
+                      <div class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$002769863$--><hr>© 2017 - 2023 Cisco and/or its affiliates. All rights reserved. Cisco Public</div>
+                      </div>
+                    </div>
+                  <!--?lit$002769863$-->
+                  <!--?lit$002769863$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!---->
+                            </div>
+                        </div>
+                        <!--?lit$002769863$-->
+                    </div>
+                </div>
+            </div>
+        </body>
+<script>
+    window.addEventListener("load", function () {
+      console.log("loaded");
+      document.querySelectorAll(".answergray").forEach(function (ele) {
+        ele.classList.add("u-display-none");
+      });
+      document.querySelectorAll(".hide-answer").forEach(function (ele) {
+        ele.classList.add("u-display-none");
+      });
+      document.querySelectorAll(".show-answer").forEach(function (ele) {
+        ele.addEventListener("click", function (e) {
+          e.currentTarget.nextElementSibling.classList.remove("u-display-none");
+          e.currentTarget
+            .closest(".question-container")
+            .querySelectorAll(".answergray")
+            .forEach(function (ele) {
+              ele.classList.remove("u-display-none");
+            });
+          ele.classList.add("u-display-none");
+        });
+      });
+      document.querySelectorAll(".hide-answer").forEach(function (ele) {
+        ele.addEventListener("click", function (e) {
+          e.currentTarget.previousElementSibling.classList.remove("u-display-none");
+          e.currentTarget
+            .closest(".question-container")
+            .querySelectorAll(".answergray")
+            .forEach(function (ele) {
+              ele.classList.add("u-display-none");
+            });
+          ele.classList.add("u-display-none");
+        });
+      });
+      var event = new Event("click", {
+        bubbles: true,
+        cancelable: true,
+      });
+      document
+        .querySelectorAll(".openTextBoxController__showButton")
+        .forEach(function (ele) {
+          ele.addEventListener("click", function (e) {
+            e.currentTarget.nextElementSibling.classList.remove("u-display-none");
+            ele.classList.add("u-display-none");
+            document.querySelectorAll(".show-answer").forEach(function (ele) {
+              ele.dispatchEvent(event);
+            });
+          });
+        });
+
+      document
+        .querySelectorAll(".openTextBoxController__hideButton")
+        .forEach(function (ele) {
+          ele.addEventListener("click", function (e) {
+            e.currentTarget.previousElementSibling.classList.remove("u-display-none");
+            ele.classList.add("u-display-none");
+            document.querySelectorAll(".hide-answer").forEach(function (ele) {
+              ele.dispatchEvent(event);
+            });
+          });
+        });
+
+      document
+        .querySelectorAll(".openTextBoxController__resetButton")
+        .forEach(function (ele) {
+          ele.addEventListener("click", function (e) {
+            document.querySelectorAll("textArea").forEach(function (ele) {
+              ele.value = "";
+            });
+          });
+        });
+    });
+  </script>
+  </html>
